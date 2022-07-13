@@ -1,0 +1,20 @@
+#container {
+    border-color: rgba(2, 51, 115, 1);
+    border-width: 3px;
+}
+
+.card-header {
+    background-color: white;
+}
+
+#btn {
+    background-color: rgba(2, 51, 115, 1);
+}
+
+input {
+    background-color: rgba(248, 248, 248, 1);
+}
+
+p {
+    margin-right: 50px;
+}
