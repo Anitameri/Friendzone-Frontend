@@ -1,15 +1,16 @@
 <header>
     <nav class="navbar navbar-expand-lg" aria-label="Fifth navbar example">
-    <div class="container-fluid mx-4">
+      <div class="container-fluid mx-1">
+        <a class="navbar-brand" href="#" title="Inicio"><img class="d-inline-block align-text-right" src="/assets/img/Blue Mount Town Logo Design 1.png" class="logo-img" alt="Logo FriendCity"/></a>
 
-      <a class="navbar-brand" href="#"><img src="/assets/img/Blue Mount Town Logo Design 1.png" class="logo-img" alt="Logo FriendCity"/></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      
+        <button (click)="setActive" class="navbar-toggler" type="button">
+        <i class="fas fa-bars"></i>
+        </button>
 
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="navbar-collapse nav-derecho" id="navbar">
-        <ul class="nav navbar-nav navbar-right">
+      <div class="collapse navbar-collapse nav-derecho"
+      [ngClass]="{'navbar-collapse--activo' : active}" >
+        <ul class=" navbar-nav">
           <li class="nav-item">
             <a class="nav-link" routerLink=""><i class="fa-solid fa-calendar-days"></i> Calendario</a>
           </li>

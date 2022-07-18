@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
+  public active : boolean = false
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit(): void {
+  }
+
+  setActive() : void{
+    this.active = !this.active
   }
 
 }
