@@ -43,7 +43,7 @@ li{
   flex-direction: row-reverse;
 }
 
-@media ( min-width:450px){
+@media ( min-width:250px){
   /* .container-git pushfluid{
   background-color: #023373;
 } */
