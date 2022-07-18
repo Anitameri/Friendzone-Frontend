@@ -20,5 +20,9 @@ export class EventService{
         return this.httpClient.get(`${this.baseURL}/delete/${id}`);
       }
 
+    updateEvent(id: number, event: Event): Observable<Object>{
+        return this.httpClient.put(`${this.baseURL}/${id}`, event);
+      }
+
 
 }
