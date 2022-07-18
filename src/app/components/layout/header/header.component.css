@@ -44,9 +44,9 @@ li{
 }
 
 @media ( min-width:450px){
- .container-fluid{
+  /* .container-git pushfluid{
   background-color: #023373;
-}
+} */
   .navbar-nav{
     background-color:#023373; 
   }
