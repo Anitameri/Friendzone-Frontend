@@ -1,3 +1,6 @@
+/* .container-fluid{
+  background-color: #023373;
+} */
 
 .logo-img{
   width:351px;
@@ -40,7 +43,14 @@ li{
   flex-direction: row-reverse;
 }
 
-
+@media ( min-width:450px){
+ .container-fluid{
+  background-color: #023373;
+}
+  .navbar-nav{
+    background-color:#023373; 
+  }
+}
 
 
 
