@@ -17,6 +17,13 @@ export class HomepageComponent implements OnInit {
   ngOnInit(): void {
     this.eventService.getEventsList().subscribe((events)=>(this.events=events));
     console.log(this.events);
+    
+  } 
+
+  deleteEvent(){
+    if(this.eventService.oneEvent.id)
+    this.eventService.deleteEvent(this.eventService.oneEvent.id).subscribe().add(()=>{this.router.navigate([''])});
+
   }
 
 }

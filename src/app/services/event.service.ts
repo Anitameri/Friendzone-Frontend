@@ -20,5 +20,6 @@ export class EventService{
         return this.httpClient.get(`${this.baseURL}/delete/${id}`);
       }
 
+      oneEvent:Event = new Event();
 
 }
