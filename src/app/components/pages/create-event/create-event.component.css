@@ -1,5 +1,7 @@
-html {
-    font-size: 1.2re;
+section {
+    font-size: 1.2rem;
+    padding-bottom: 3%;
+    
   }
 
   .main__form{
@@ -325,7 +327,7 @@ html {
   }
   
   section.ready__started.project__form .ready__started-box {
-    position: relative;
+    position: absolute;
     margin-bottom: -40rem;
     -webkit-box-shadow: 0 3px 3.2rem rgba(0, 0, 0, 0.08);
             box-shadow: 0 3px 3.2rem rgba(0, 0, 0, 0.08);
