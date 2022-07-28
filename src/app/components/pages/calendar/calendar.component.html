@@ -1,0 +1,31 @@
+<div class="row box">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrum">
+            <li class="breadcrum-item"><a href="#"></a></li>
+        </ol>
+    </nav>
+    <div class="col-md-5 mt-3">
+        <h1 class="text-muted mb-6 text-center">View Events in Calendar Mode</h1>
+        <hr>
+        <full-calendar [options]="calendarOptions"></full-calendar>
+    </div>
+</div>
+
+<ng-template #template>
+    <div class="modal-header bg-primary text-white">
+      <h4 class="modal-title pull-left">Evento</h4>
+      <button type="button" class="btn-close close pull-right" aria-label="Close" (click)="modalRef?.hide()">
+        <span aria-hidden="true" class="visually-hidden">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      Jesus tiene {{title}} el {{start | date}}
+    </div>
+  </ng-template>
+
+
+
+
+
+
+
